@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<main class="home-main">
+    <h1>Welcome to Invest7</h1>
+    <p>NOTE: This is a work in progress.</p>
+
+    <form method="GET">
+        <button type="submit" formaction="{{ url_for('login') }}">Login</button>
+        <button type="submit" formaction="{{ url_for('portfolio_list') }}">View Portfolio</button>
+    </form>
+</main>
+
+{% endblock content %}
